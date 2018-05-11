@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+.box {
+    float:left;
+    position:relative;
+    margin-right: 4px;
+    margin-bottom: 4px; 
+}
+
+.duration {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background: black;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+}

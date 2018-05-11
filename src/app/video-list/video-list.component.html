@@ -1,0 +1,13 @@
+<div class="container" *ngIf="videoList && videoList.length > 0">
+  <div *ngFor="let video of videoList" class="row">
+    <a [routerLink]="['/play', video.id]">
+      <div class="box">
+        <img class="img-thumbnail" [src]="video.thumbnail.url" style="height:auto;" />
+        <span class="duration" [innerText]="video.duration|formatDuration"></span>
+      </div>
+      <div [innerText]="video.title"></div>
+    </a>
+    <div [innerText]="video.publishedAt | date:'short'"></div>
+    <div [innerText]="video.channelTitle"></div>
+  </div>
+</div>
